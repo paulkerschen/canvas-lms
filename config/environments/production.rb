@@ -6,7 +6,7 @@ environment_configuration(defined?(config) && config) do |config|
   config.cache_classes = true
 
   # Full error reports are disabled and caching is turned on
-  config.consider_all_requests_local = false
+  config.consider_all_requests_local = true
   config.action_controller.perform_caching = true
 
   # run rake js:build to build the optimized JS if set to true
@@ -31,7 +31,7 @@ environment_configuration(defined?(config) && config) do |config|
 
   # Disable Rails's static asset server
   # In production, Apache or nginx will already do this
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   # Enable serving of images, stylesheets, and javascripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
