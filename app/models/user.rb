@@ -1278,7 +1278,8 @@ class User < ActiveRecord::Base
   end
 
   def self.default_avatar_fallback
-    "/images/messages/avatar-50.png"
+    # "/images/messages/avatar-50.png"
+    "http://upload.wikimedia.org/wikipedia/commons/c/c0/Ada_Lovelace_Chalon_portrait.jpg"
   end
 
   def self.avatar_fallback_url(fallback=nil, request=nil)
